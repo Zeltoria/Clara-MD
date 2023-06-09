@@ -3,7 +3,6 @@ const threshold = 0.72 // semakin tinggi nilai, semakin mirip
 export async function before(m) {
     this.game = this.game ? this.game : {}
     let id = 'family100_' + m.chat
-    let benarnya = 'https://telegra.ph/file/ab725c3de31e39bf3a08a.jpg'
     if (!(id in this.game))
         return !0
     let room = this.game[id]
@@ -34,7 +33,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
     }).filter(v => v).join('\n')}
 ${isSurrender ? '' : `+${room.winScore} XP tiap jawaban benar`}
     `.trim()
-    const msg = await this.sendFile(m.chat, benarnya, 'benar.jpg',caption, null, {
+    const msg = await this.reply(m.chat, caption, null, {
         mentions: this.parseMention(caption)
     })
     room.msg = msg
