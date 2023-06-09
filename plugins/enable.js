@@ -2,6 +2,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 
   let isEnable = /true|enable|(turn)?on|1/i.test(command)
   let chat = global.db.data.chats[m.chat]
+  let okii = 'https://telegra.ph/file/c49ab2b4ca5b36cee7cbf.jpg'
   let user = global.db.data.users[m.sender]
   let bot = global.db.data.settings[conn.user.jid] || {}
   let type = (args[0] || '').toLowerCase()
@@ -409,7 +410,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       global.opts['swonly'] = isEnable
       break
     default:
-     if (!/[01]/.test(command)) return m.reply(`*List Option :*
+     if (!/[01]/.test(command)) return m.reply(`List Option :
 -Welcome | -Delete | -Autodelvn | -Publik | -Simi
 -Nsfw | -PremNsfwChat | -Antilink | -AntiDelete
 -AntiSatir | -AntiSpam | -AntiSticker | -AntiVirtex
@@ -420,20 +421,20 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 -SwOnly | -Freply | -Clear | -Desc | -Getmsg
 
 Contoh :
-*.enable welcome*
+.enable welcome
 Untuk Mengaktifkan
-*.disable welcome*
+.disable welcome
 Untuk Menonaktifkan
 `.trim())
       throw false
   }
  conn.reply(m.chat, `╭───═[Status]
-│⩽⩾ Tipe: *${type}*
-│⩽⩾ Status: *Sukses!*
-│⩽⩾ Opsi: *${isEnable ? 'Aktif' : 'Nonaktif'}*
-│⩽⩾ Untuk: *${isAll ? 'Bot Ini' : isUser ? '' : 'Chat Ini'}*
+│⩽⩾ Tipe: ${type}
+│⩽⩾ Status: Sukses!
+│⩽⩾ Opsi: ${isEnable ? 'Aktif' : 'Nonaktif'}
+│⩽⩾ Untuk: ${isAll ? 'Bot Ini' : isUser ? '' : 'Chat Ini'}
 ┗─────────────···
-`}, m)
+`, m)
 }
 handler.help = ['enable', 'disable']
 handler.tags = ['group', 'owner']
