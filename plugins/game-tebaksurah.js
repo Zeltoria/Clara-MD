@@ -5,7 +5,7 @@ let handler = async (m, { conn, command, usedPrefix }) => {
     conn.tebaksurah = conn.tebaksurah ? conn.tebaksurah : {}
     let id = m.chat
     if (id in conn.tebaksurah) {
-        conn.sendButton(m.chat, 'Masih Ada Soal Yang Belum Terjawabi', author, null, buttons, conn.tebaksurah[id][0])
+        conn.reply(m.chat, 'Masih Ada Soal Yang Belum Terjawabi', conn.tebaksurah[id][0])
         throw false
     }
     let ran = 6236
@@ -36,12 +36,10 @@ Type: ${json.surah.revelationType}
 `
 
     conn.tebaksurah[id] = [
-        await conn.sendButton(m.chat, caption, author, fotonya1, buttons, m),
+        await conn.reply(m.chat, caption, m),
         json, poin,
         setTimeout(() => {
-            if (conn.tebaksurah[id]) conn.sendButton(m.chat, `Waktu Habis!\nJawabannya Adalah ${captu}`, author, null, [
-                ['Main Lagi', '/tebaksurah']
-            ], conn.tebaksurah[id][0])
+            if (conn.tebaksurah[id]) conn.reply(m.chat, `Waktu Habis!\nJawabannya Adalah ${captu}`, conn.tebaksurah[id][0])
             delete conn.tebaksurah[id]
         }, timeout)
     ]
@@ -55,8 +53,3 @@ handler.tags = ['game']
 handler.command = /^tebaksurah/i
 
 export default handler
-
-const buttons = [
-    ['Bantuan', '/hsur'],
-    ['Nyerah', 'menyerah']
-]
