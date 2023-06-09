@@ -2,7 +2,6 @@ import similarity from 'similarity'
 const threshold = 0.72
 export async function before(m) {
     let id = m.chat
-    let benarnya = 'https://telegra.ph/file/ab725c3de31e39bf3a08a.jpg'
     if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !m.text || !/Ketik.*teka/i.test(m.quoted.text) || /.*(hint|teka)/i.test(m.text))
         return !0
     this.tebakkata = this.tebakkata ? this.tebakkata : {}
@@ -13,7 +12,7 @@ export async function before(m) {
         // m.reply(JSON.stringify(json, null, '\t'))
         if (m.text.toLowerCase() == json.jawaban.toLowerCase().trim()) {
             global.db.data.users[m.sender].exp += this.tebakkata[id][2]
-            conn.sendFile(m.chat, benarnya, 'benar.jpg', `*Benar!*\n+${this.tebakkata[id][2]} XP`, m)
+            conn.reply(m.chat, `*Benar!*\n+${this.tebakkata[id][2]} XP`, m)
             clearTimeout(this.tebakkata[id][3])
             delete this.tebakkata[id]
         } else if (similarity(m.text.toLowerCase(), json.jawaban.toLowerCase().trim()) >= threshold)
