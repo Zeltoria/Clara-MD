@@ -4,11 +4,7 @@
 <h1 align="center">Clara - MD</h1>
 
 
-## NOTE BEFORE USING!!
-- Edit all Owner Information on config.js
-- If the feature not working, just buy your own API key
-- If you facing some issue, just open Issues on github page
----------
+## Baca Sebelum Pakai!!
 - Ubah semua Informasi Owner di config.js
 - Jika sebagian fitur ada yang tidak berfungsi, beli API key lu sendiri
 - Jika kamu mengalami masalah, bisa buat Issues di page ini
