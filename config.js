@@ -12,9 +12,11 @@ global.mods = []
 global.prems = []
 // Info
 global.nomorwa = '6285760451683'
-global.author = '© Zeltoria'
+global.author = '© Xyroinee'
 global.namebot = '​Clara - MD'
-global.wm = '© Clara By Zeltoria'
+global.wm = '© Xyroinee'
+global.stickpack = 'Clara - MD'
+global.stickauth = '© Xyroinee'
 // Link Sosmed
 global.sig = 'https://www.instagram.com/danilelistz02'
 global.sgh = 'https://github.com/Zeltoria'
@@ -28,22 +30,18 @@ global.wait = '_Sedang Di Proses, Mohon Tunggu_....'
 global.eror = 'Terjadi Kesalahan Coba Lagi Nanti!'
 global.multiplier = 69 
 // Apikey
-global.openai = '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' 
-global.org = 'org-VKTbfzIGL0EfLb8RgRfbLvbu'
-global.rose = 'Rs-bangsat'
-global.zeltoria = 'Elistz'
-global.ibeng = 'APIKEY'
-global.xcode = 'Frieren'
+// Note: Jika Tidak Punya Apikey Kalian Harus
+// Daftar Ke Website Tersebut Yang Ada Di Bawah
+global.xyro = 'Apikeymu'
+global.xcode = 'Apikeymu'
 global.APIs = {
-  rose: 'https://api.itsrose.site',
   xcoders : 'https://api-xcoders.site',
-  zeltoria: 'https://api.zeltoria.my.id'
+  xyro: 'https://api.xyroinee.xyz'
 }
 
 global.APIKeys = { 
-  'https://api.itsrose.site': 'Rs-bangsat',
-  'https://api-xcoders.site': 'Frieren',
-  'https://api.zeltoria.my.id': 'Elistz'
+  'https://api-xcoders.site': 'Apikeymu',
+  'https://api.xyroinee.xyz': 'Apikeymu'
 }
 
 let file = fileURLToPath(import.meta.url)
