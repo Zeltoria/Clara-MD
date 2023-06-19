@@ -8,6 +8,7 @@
 - Ubah semua Informasi Owner di config.js
 - Jika sebagian fitur ada yang tidak berfungsi, beli API key lu sendiri
 - Jika kamu mengalami masalah, bisa buat Issues di page ini
+- Node Module: https://www.mediafire.com/file/8fwvn5ebl8irvb4/archive-2023-06-19T132748%252B0200.tar.gz/file
 
 ### a little about this bot
 - ✔️ | **Simple** 
