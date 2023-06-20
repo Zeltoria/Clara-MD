@@ -14,8 +14,8 @@ export default handler;
 
 
 const ara = [
-	"https://xyroinee.github.io/audio/ara1.mp3",
-	"https://xyroinee.github.io/audio/ara2.mp3",
-	"https://xyroinee.github.io/audio/ara.mp3",
-	"https://xyroinee.github.io/audio/audio_ara-ara.mp3",
+	"https://bucin-livid.vercel.app/audio/ara1.mp3",
+	"https://bucin-livid.vercel.app/audio/ara2.mp3",
+	"https://bucin-livid.vercel.app/audio/ara.mp3",
+	"https://bucin-livid.vercel.app/audio/audio_ara-ara.mp3",
 ];
