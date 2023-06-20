@@ -2,7 +2,7 @@ import util from "util";
 import path from "path";
 
 let handler = async (m, { conn }) => {
-	conn.sendFile(m.chat, 'https://xyroinee.github.io/audio/yowaimo2.mp3', "salto.mp3", null, m, true, {
+	conn.sendFile(m.chat, 'https://bucin-livid.vercel.app/audio/yowaimo2.mp3', "salto.mp3", null, m, true, {
 		type: "audioMessage",
 		ptt: true,
 	});
