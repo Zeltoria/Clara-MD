@@ -32,7 +32,7 @@
 
 
 ##
-[![Owner](https://img.shields.io/badge/Owner%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6285760451683) 
+[![Group Chat](https://img.shields.io/badge/Owner%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/LAWdMIQri9SKee5kqmISH0) 
 [![Bot](https://img.shields.io/badge/Bot%20Whatsapp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/62857604516837)
 
 
@@ -42,10 +42,10 @@
 Whatsapp : 085760451683
 Thanks To : 
 - Adiwajshing (Author Baileys)
-- DikaArdnt (Base Script)
-- KizakixD
-- DGXeon
-- KirBotz
+- Bochilgaming
+- IamYanXiao
+- ShirokamiRyzn
+- Xct007
 - Ekuzika
 - Dan Semua Yang  Berkontribusi Dalam Pengambangan Script Ini 
 
