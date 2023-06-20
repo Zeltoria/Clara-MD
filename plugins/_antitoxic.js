@@ -11,7 +11,7 @@ export async function before(m, { isAdmin, isBotAdmin }) {
     let bang = m.key.id
     
     if (chat.antiToxic && isAntiToxic) {
-	conn.sendFile(m.chat, 'https://xyroinee.github.io/audio/toxic.mp3', "toxic.mp3", null, m, true, {
+	conn.sendFile(m.chat, 'https://bucin-livid.vercel.app/audio/toxic.mp3', "toxic.mp3", null, m, true, {
 		type: "audioMessage",
 		ptt: true,
 	})
