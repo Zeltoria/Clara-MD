@@ -30,6 +30,8 @@ export async function handler(chatUpdate) {
     this.pushMessage(chatUpdate.messages).catch(console.error)
     let m = chatUpdate.messages[chatUpdate.messages.length - 1]
     
+    global.img = 'https://telegra.ph/file/e4a2f4339da8a32ad20a1.jpg' 
+    
     if (!m)
         return
     if (global.db.data == null)
@@ -963,13 +965,13 @@ export async function handler(chatUpdate) {
                 if (!('self' in settings)) settings.self = false
                 if (!('autoread' in settings)) settings.autoread = false
                 if (!('restrict' in settings)) settings.restrict = true
+                if (!('jadibot' in settings)) settings.jadibot = false
                 if (!('autorestart' in settings)) settings.autorestart = true
-                if (!('anticall' in settings)) settings.autoread = false
                 if (!('restartDB' in settings)) settings.restartDB = 0
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
                 autoread: false,
-                anticall: true,
+                jadibot: false,
                 restrict: true,
                 autorestart: true,
                 restartDB: 0
@@ -1308,9 +1310,10 @@ export async function participantsUpdate({ id, participants, action }) {
                     } finally {
                         text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'unknow') :
                             (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user))
- let wel = 'https://telegra.ph/file/61a04a443f2b9fc3e34bc.jpg'
+let wel = 'https://telegra.ph/file/61a04a443f2b9fc3e34bc.jpg'
 
  let lea = 'https://telegra.ph/file/cadce7b456c2b36564737.jpg'
+ 
                         this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { mentions: [user] })
                     }
                 }
@@ -1377,13 +1380,19 @@ let tag = `@${m.sender.replace(/@.+/, '')}`
   let mentionedJid = [m.sender]
 let name = conn.getName(m.sender)
 let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
-let msg = {
+let vn = "https://xyroinee.github.io/audio/lusiapa.mp3"
+let mssg = {
         rowner: 'Maaf, Fitur Ini Hanya Bisa Di Pakai Oleh Ownerku',
         owner: 'Maaf, Fitur Ini Hanya Bisa Di Pakai Oleh Ownerku',
-        mods: 'Fitur Ini Khusus Moderator',
+        mods: 'Fitur Ini Khusus Moderator'}[type]
+        if (mssg) return conn.sendFile(m.chat, vn, "owner.mp3", null, m, true, {
+		type: "audioMessage",
+		ptt: true,
+	})
+let msg = {
         premium: 'Maaf Kak, Tapi Fitur Ini Hanya Bisa Di Gunakan Oleh User Premium',
         group: 'Fitur Ini Hanya Bisa Digunakan Di Dalam Grup',       
-        botAdmin: 'Jadikan Vynaa Sebagai Admin Terlebih Dahulu Agar Bisa Menggunakan Fitur Ini',
+        botAdmin: 'Jadikan Clara Sebagai Admin Terlebih Dahulu Agar Bisa Menggunakan Fitur Ini',
         restrict: 'Restict Belum Di Nyalakan Untuk Chat Ini'}[type]
   if (msg) return conn.reply(m.chat, msg, fkon)
   let daftar = {
