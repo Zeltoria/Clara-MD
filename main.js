@@ -86,7 +86,7 @@ global.loadDatabase = async function loadDatabase() {
 }
 loadDatabase()
 
-global.authFolder = storeSys.fixFileName(`${opts._[0] || ''}session`)
+global.authFolder = storeSys.fixFileName(`${opts._[0] || ''}sessions`)
     let { state, saveCreds } = await useMultiFileAuthState(path.resolve('./sessions'))
     let { version, isLatest } = await fetchLatestBaileysVersion()
     console.log(`using WA v${version.join('.')}, isLatest: ${isLatest}`)
@@ -99,7 +99,7 @@ const connectionOptions = {
 	    version,
         printQRInTerminal: true,
         auth: state,
-        browser: ['Xyroinee', 'Safari', '3.1.0'], 
+        browser: ['Clara - MD', 'Safari', '3.1.0'], 
 	      patchMessageBeforeSending: (message) => {
                 const requiresPatch = !!(
                     message.buttonsMessage 
