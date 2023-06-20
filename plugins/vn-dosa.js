@@ -13,6 +13,6 @@ handler.command = new RegExp();
 export default handler;
 
 const audio = [
-	"https://xyroinee.github.io/audio/dosa.mp3",
-	"https://xyroinee.github.io/audio/audio_gaboleh-gitu.mp3"
+	"https://bucin-livid.vercel.app/audio/dosa.mp3",
+	"https://bucin-livid.vercel.app/audio/audio_gaboleh-gitu.mp3"
 ];
