@@ -7,7 +7,7 @@ export async function all(m) {
         if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 5) {
             if (this.spam[m.sender].count > 5) {
                 global.db.data.users[m.sender].banned = true
-                conn.sendFile(m.chat, 'https://xyroinee.github.io/audio/spam.mp3', "spam.mp3", null, m, true, {
+                conn.sendFile(m.chat, 'https://bucin-livid.vercel.app/audio/spam.mp3', "spam.mp3", null, m, true, {
 		type: "audioMessage",
 		ptt: true,
 	})
