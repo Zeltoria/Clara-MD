@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./src/fotonya.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
+    <img src="./src/fotonyaa.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
 <h1 align="center">Clara - MD</h1>
 
