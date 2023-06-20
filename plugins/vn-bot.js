@@ -13,10 +13,10 @@ handler.command = new RegExp();
 export default handler;
 
 const audio = [
-	"https://xyroinee.github.io/audio/adaapa.mp3",
-	"https://xyroinee.github.io/audio/adaapa1.mp3",
-	"https://xyroinee.github.io/audio/apaansih.mp3",
-	"https://xyroinee.github.io/audio/iya%20kak.mp3",
-	"https://xyroinee.github.io/audio/kenapa.mp3",
-	"https://xyroinee.github.io/audio/oy.mp3",
+	"https://bucin-livid.vercel.app/audio/adaapa.mp3",
+	"https://bucin-livid.vercel.app/audio/adaapa1.mp3",
+	"https://bucin-livid.vercel.app/audio/apaansih.mp3",
+	"https://bucin-livid.vercel.app/audio/iya%20kak.mp3",
+	"https://bucin-livid.vercel.app/audio/kenapa.mp3",
+	"https://bucin-livid.vercel.app/audio/oy.mp3",
 ];
