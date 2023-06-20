@@ -261,7 +261,7 @@ function clockStringP(ms) {
 }
 
 const audio = [
-	"https://xyroinee.github.io/audio/yowaimo.mp3",
-	"https://xyroinee.github.io/audio/summer.mp3",
-	"https://xyroinee.github.io/audio/one.m4a",
+	"https://bucin-livid.vercel.app/audio/yowaimo.mp3",
+	"https://bucin-livid.vercel.app/audio/summer.mp3",
+	"https://bucin-livid.vercel.app/audio/one.m4a",
 ];
