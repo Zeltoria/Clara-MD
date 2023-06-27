@@ -6,25 +6,25 @@ const readMore = more.repeat(4001)
 
 // Owner
 global.owner = [
-['6285760451683', 'Zeltoria', true]
+['6285974238938', 'shanachan', true]
 ]
 global.mods = []
 global.prems = []
 // Info
-global.nomorwa = '6285760451683'
+global.nomorwa = '6285974238938'
 global.author = '© Xyroinee'
 global.namebot = '​Clara - MD'
-global.wm = '© Clara By Xyroine'
+global.wm = '© Clara By shanachan'
 global.stickpack = 'Clara - MD'
-global.stickauth = '© Xyroine'
+global.stickauth = '© shanachan'
 // Link Sosmed
 global.sig = 'https://www.instagram.com/danilelistz02'
 global.sgh = 'https://github.com/Xyroinee'
 global.sgc = 'https://chat.whatsapp.com/LAWdMIQri9SKee5kqmISH0'
 // Donasi
-global.psaweria = 'https://saweria.co/Zeltoria'
-global.ptrakterr = 'https://trakteer.id/zeltoria'
-global.povo = '0896-1075-0607'
+global.psaweria = 'https://saweria.co/NakanoBot'
+global.ptrakterr = 'https://trakteer.id/NakanoBot'
+global.povo = '0859-7423-8938'
 // Info Wait
 global.wait = '_Sedang Di Proses, Mohon Tunggu_....'
 global.eror = 'Terjadi Kesalahan Coba Lagi Nanti!'
