@@ -8,8 +8,7 @@
 - Ubah Semua Informasi Owner Di Config.js
 - Jika Kamu Mengalami Masalah, Bisa Buat Issues Di Page Ini
 - Pastikan Isi Apikey Kamu Di Config.js Agar Fiturnya Aktif
-- Jika Tidak Punya Apikey Silahkan Daftar Untuk Mendapatkan Apikey
-- Daftar Disini: https://api.xyroinee.xyz
+- Jika Tidak Fitur Error Ganti Ke Api https://zeltoria.site
 - Untuk Node_Module Kalian Bisa Download Dibawah Ini
 - https://www.mediafire.com/file/f52nygbxa8kb580/node_modules.zip/file
 
@@ -26,7 +25,7 @@
 - ✔️ | Confess
 - ✔️ | Chat Gpt
 - ✔️ | To Anime
-- ✔️ | RPG Games
+- ✔️ | Werewolf Games
 - ✔️ | And Others
 ---------
 
@@ -38,14 +37,16 @@
 
 ## Thanks To
 ```bash
-𝐀𝐮𝐭𝐡𝐨𝐫 : Xyroinee
+𝐀𝐮𝐭𝐡𝐨𝐫 : Zeltoria
 Whatsapp : 085760451683
 Thanks To : 
-- Adiwajshing (Author Baileys)
+- WhiskeySocket
 - Bochilgaming
 - IamYanXiao
 - ShirokamiRyzn
 - Xct007
 - Ekuzika
+- Chaikal
+- Dimas Anjay Mabar
 - Dan Semua Yang  Berkontribusi Dalam Pengambangan Script Ini 
 
