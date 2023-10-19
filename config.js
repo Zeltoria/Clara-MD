@@ -6,7 +6,7 @@ const readMore = more.repeat(4001)
 
 // Owner
 global.owner = [
-['628xxx', 'Xyroinee', true]
+['6289516419522', 'Xyroinee', true]
 ]
 global.mods = []
 global.prems = []
@@ -32,9 +32,9 @@ global.wait = 'Sedang Di Proses, Mohon Tunggu....'
 global.eror = 'Terjadi Kesalahan Coba Lagi Nanti!'
 global.multiplier = 69 
 // Apikey
-global.lol = 'apikeymu'
-global.rose = 'apikeymu'
-global.xyro = 'apikeymu'
+global.lol = 'TCM8M5H7Js'
+global.rose = 'TCM8M5H7Js'
+global.xyro = 'TCM8M5H7Js'
 // Catatan : Jika Mau Work Fiturnya
 // Masukan Apikeymu
 // Gapunya Apikey? Ya Daftar
@@ -48,7 +48,7 @@ global.APIs = {
 
 /Apikey/
 global.APIKeys = {
-    "https://api.xyroinee.xyz": "apikeymu",
+    "https://api.xyroinee.xyz": "TCM8M5H7Js",
 }
 
 let file = fileURLToPath(import.meta.url)
